@@ -246,7 +246,7 @@ describe('Lodash training Util', function() {
                 elem1,
                 overEvery;
             before(function() {
-                params = datasets.overEvery3();
+                params = datasets.overEvery2();
                 elem1 = params[0];
                 overEvery = _.overEvery.apply(_, params);
             });
