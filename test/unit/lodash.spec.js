@@ -107,7 +107,7 @@ describe('Lodash training', function ()
             it('should return reverse wrapped array', function ()
             {
                 value = _(array).tap(interceptor).chain().reverse().value();
-                expect(value).to.eql([10, 8, 6, 4, 2]);
+                expect(value).to.eql([10, 8, 6, 4]);
             });
         });
 

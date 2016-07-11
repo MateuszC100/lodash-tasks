@@ -4,61 +4,72 @@ module.exports = {
 
     _: function ()
     {
-        return [];
+        return [[1,2,3,4]];
     },
 
     chain: function ()
     {
-        return [];
+        return [[{'user': 'Mark', 'gold': 1500000},
+            {'user': 'Freddy', 'gold': 2000000},
+            {'user': 'John', 'gold': 250000}]];
     },
 
     tap: function ()
     {
-        return [];
+        return [[4,6,8,10],function (value,arrays) {
+            return [value,arrays];
+        }];
     },
 
     thru: function ()
     {
-        return [];
+        return ['roses are red',function (value) {
+            return [value];
+        }];
     },
 
     _prototype: function ()
     {
-        return [];
+        return [['a','b','c','d']];
     },
 
     prototypeAt: function ()
     {
-        return [];
+        return [['Address[0].person.name','Address[0].person.surname','Address[1].st.number','Address[1].st.name','Address[2].city']];
     },
 
     prototypeChain: function ()
     {
-        return [];
+        var users = [
+            {'name': 'Mark', 'age': 26},
+            {'name': 'Jack', 'age': 32},
+            {'name': 'Kate', 'age': 38, 'gender': 'female'}
+        ];
+        return [users];
     },
 
     prototypeCommit: function ()
     {
-        return [];
+        return [['old commit', 'commit']];
     },
 
     prototypeNext: function ()
     {
-        return [];
+        return [['Kate', 'Smith',30]];
     },
 
     prototypePlant: function ()
     {
-        return [];
+        return [[9,16]];
     },
 
     prototypeReverse: function ()
     {
-        return [];
+        return [[5,3,7,4]];
     },
 
     prototypeValue: function ()
     {
-        return [];
+        return [['Andy','Flower',30,4600]];
     }
 };
